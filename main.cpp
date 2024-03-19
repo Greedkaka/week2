@@ -1,5 +1,3 @@
-#include <string>
-
 void Game();
 
 int main() {

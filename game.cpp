@@ -1,17 +1,20 @@
 #include <iostream>
 #include <string>
 
-std::string Util();
+std::string Ans();
+std::string Scan();
 
 void Game(){
-    std::string num1="1",num2="2";
-    std::cout<<"Enter a answer: ";
-    num1=Util();
+    std::string num1,num2;
+    int Stri=0,Ball=0;
+    num1=Ans();
+    std::cout<<"Answer is "<<num1<<std::endl;
 
     while(true){
         std::cout<<"Enter a guess: ";
-        num2=Util();
-        int Stri=0,Ball=0;
+        num2=Scan();
+        Stri=0;
+        Ball=0;
 
         for(int y=0; y<3; y++){
             for(int x=0; x<3; x++){
